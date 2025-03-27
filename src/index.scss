@@ -29,14 +29,16 @@ button{
   margin: 20px;
 }
 .banner {
-  padding-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 100px;
-  background-color: #351111;
-  color: #fff;
-  border-radius: 15px;
+
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #351111;
+    color: #fff;
+    border-radius: 15px;
+
+
 
   .banner-content {
     max-width: 50%;
@@ -121,3 +123,21 @@ background: rgb(181, 181, 237);
     border-radius: 5px;
   }
 }
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column; /* Ustun shaklida joylashish */
+      text-align: center; /* Matnni markazga joylash */
+      padding: 20px; /* Paddingni kamaytirish */
+  }
+  .header {
+      margin-top: 20px; /* Elementlar orasida masofa */
+  }
+  .header a {
+      display: block; /* Linklarni blok shaklida joylash */
+      width: 100%; /* To‘liq eni egallash */
+      padding: 10px 0; /* Ichki masofa qo‘shish */
+      text-align: center; /* Matnni markazlash */
+  }
+}
+
+
